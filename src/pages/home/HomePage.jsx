@@ -1,12 +1,7 @@
-import React from 'react'
 import Dashboard from '../dashboard/Dashboard'
 
 function HomePage() {
-  return (
-    <div>
-        <Dashboard />
-    </div>
-  )
+  return <Dashboard />
 }
 
 export default HomePage

@@ -4,21 +4,21 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return(
         <>
-        <div className="px-[60px] py-[40px] mx-[60px] rounded-t-4xl bg-[#214DD0] text-[#FFFFFF] flex justify-between">
+        <div className="px-4 sm:px-8 lg:px-[60px] py-6 lg:py-[40px] mx-0 lg:mx-[60px] rounded-t-4xl bg-[#214DD0] text-[#FFFFFF] flex flex-col sm:flex-row sm:flex-wrap gap-8 sm:gap-12 justify-between">
 
             <div className="grid grid-row-2 gap-5">
-                <h1 className='text-3xl text-[#FFFFFF] mb-5'>Docgad</h1>
-                <p>Revolutionizing clinic management <br />with AI-driven tools.</p>
+                <h1 className='text-2xl sm:text-3xl text-[#FFFFFF] mb-5'>Docgad</h1>
+                <p className="text-sm sm:text-base">Revolutionizing clinic management <br />with AI-driven tools.</p>
                 <p>Copyright © 2025 DocGad. All rights reserved.</p>
             </div>
 
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-2 sm:gap-3">
                 <p className="text-[#FFEFCD80] mb-5">Company</p>
                 <Link to="/about-us">About Us</Link>
                 <Link to="/our-pricing">Our Pricing</Link>
             </div>
 
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-2 sm:gap-3">
                 <p className="text-[#FFEFCD80] mb-5 ">Our Solutions</p>
                 <Link to="/ai-patient-record">AI-Powered Patient Record System</Link>
                 <Link to="/appointment-secheduling">Smart Appointment Scheduling</Link>
@@ -26,7 +26,7 @@ const Footer = () => {
                 <Link to="/anylytics">Data Analytics for Clinics</Link>
             </div>
 
-            <div className="flex flex-col gap-3 ">
+            <div className="flex flex-col gap-2 sm:gap-3">
                 <p className="text-[#FFEFCD80] mb-5">Contact Us</p>
                 <p>📍 21/4, MG Road, Bengaluru, India</p>
                 <p>✉️ docgad525@gmail.com</p>
